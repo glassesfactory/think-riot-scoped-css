@@ -1,0 +1,31 @@
+{
+  "name": "seikimatsu",
+  "version": "1.0.0",
+  "description": "bloggggggggggggggg",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "styl": "stylus src/stylus/main.styl -o assets/stylesheets/main.css",
+    "build": "rollup -c",
+    "server": "npm run build && superstatic --port 3476"
+  },
+  "author": "Yamaguchi Eikichi",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "rollup": "^0.36.4",
+    "rollup-plugin-buble": "^0.14.0",
+    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-riot": "^1.0.0",
+    "rollup-plugin-stylus-css-modules": "^1.2.2",
+    "rollup-plugin-uglify": "^1.0.1"
+  },
+  "dependencies": {
+    "riot": "^3.0.1",
+    "riot-route": "^3.0.1",
+    "stylus": "^0.52.4",
+    "whatwg-fetch": "^2.0.1"
+  }
+}
